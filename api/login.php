@@ -1,8 +1,8 @@
 <?php
 include_once "../base.php";
-$chk=$Admin->count(['acc'=>$_POST['acc'],'pw'=>$_POST['pw']]);
-if (!empty($_POST['token'])) {
-    if (hash_equals($_SESSION['token'], $_POST['token'])) {
+$chk=$Admin->count(['acc'=>$_GET['acc'],'pw'=>$_GET['pw']]);
+if (!empty($_GET['token'])) {
+    if (hash_equals($_SESSION['token'], $_GET['token'])) {
          // Proceed to process the form data
          if($chk>0){
             to("../admin.php");

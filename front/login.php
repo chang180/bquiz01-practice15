@@ -8,7 +8,7 @@
 				?>
                     <div style="height:32px; display:block;"></div>
                                         <!--正中央-->
-                                            		<form method="post" action="api/login.php">
+                                            		<form method="get" action="api/login.php">
 													<input type="hidden" name="token" value="<?=$token;?>">
                         	    	<i class="t botli">管理員登入區</input>
                         			<p class="cent">帳號 ： <input name="acc" autofocus="" type="text"></p>
